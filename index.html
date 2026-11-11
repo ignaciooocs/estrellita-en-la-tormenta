@@ -1,0 +1,1067 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Estrellita en la tormenta</title>
+<meta name="description" content="Guía para preparar y grabar el video de la evaluación sumativa S3 de MUSV0059: cítara de caja con elásticos, parámetros del sonido y secuencia sonora.">
+<meta name="theme-color" content="#111a30">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Estrellita en la tormenta · Guía del video">
+<meta property="og:description" content="Cítara de caja con elásticos, los cuatro parámetros del sonido y una tormenta de noche. MUSV0059, sumativa semana 3.">
+<meta property="og:image" content="https://ignaciooocs.github.io/estrellita-en-la-tormenta/placas/01_portada.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 34'%3E%3Crect width='34' height='34' rx='10' fill='%23111a30'/%3E%3Cpath d='M17 6 L19.6 14.4 L28 17 L19.6 19.6 L17 28 L14.4 19.6 L6 17 L14.4 14.4Z' fill='%23f4c542'/%3E%3C/svg%3E">
+<style>:root{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+</head>
+<body>
+<style>
+/* Layout: noche de tormenta como portada; luego cinco capítulos en orden (paso 1 → 5), cada uno a dos columnas en escritorio */
+:root{
+  --bg:#eef2f7; --surface:#ffffff; --surface-2:#e5ebf3; --ink:#13203a; --muted:#56647a; --line:#d3dbe7;
+  --accent:#1f5fae; --accent-ink:#ffffff; --accent-soft:#dbe8f7;
+  --night:#111a30; --night-2:#1e2c52; --night-ink:#f1f5fb; --night-muted:#b5c1d7; --star:#f4c542;
+  --altura:#6a4fe0; --duracion:#0b8273; --intensidad:#c24a0c; --timbre:#bb2a61;
+  --cuerpo:#9a5d08; --citara:#1f5fae; --objeto:#3d7616; --ok:#1d7a43; --warn:#b45309; --bad:#b42318;
+  --band:#c0553d; --pencil:#e8b63a; --pencil-tip:#8a5a1c; --hole:#26314a;
+  --font-display:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;
+  --font-body:'Figtree','Segoe UI',system-ui,sans-serif;
+  --radius:18px;
+  --shadow:0 1px 2px rgba(19,32,58,.06),0 10px 30px rgba(19,32,58,.07);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0b1220; --surface:#121b2e; --surface-2:#19243b; --ink:#e8eef8; --muted:#9eabc2; --line:#26334c;
+  --accent:#7db3f2; --accent-ink:#0b1220; --accent-soft:#1a2c48;
+  --altura:#ab98ff; --duracion:#40cdb9; --intensidad:#ff9b5f; --timbre:#ff7eaa;
+  --cuerpo:#f0b955; --citara:#7db3f2; --objeto:#9bd35a; --ok:#5fd394; --warn:#f5b454; --bad:#ff8a80;
+  --band:#f08a6a; --pencil:#e8b63a; --pencil-tip:#c48a3a; --hole:#04070d;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);
+  color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#0b1220; --surface:#121b2e; --surface-2:#19243b; --ink:#e8eef8; --muted:#9eabc2; --line:#26334c;
+  --accent:#7db3f2; --accent-ink:#0b1220; --accent-soft:#1a2c48;
+  --altura:#ab98ff; --duracion:#40cdb9; --intensidad:#ff9b5f; --timbre:#ff7eaa;
+  --cuerpo:#f0b955; --citara:#7db3f2; --objeto:#9bd35a; --ok:#5fd394; --warn:#f5b454; --bad:#ff8a80;
+  --band:#f08a6a; --pencil:#e8b63a; --pencil-tip:#c48a3a; --hole:#04070d;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:40;background:var(--bg)}
+h1,h2,h3{font-family:var(--font-display);line-height:1.08;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h2{font-size:clamp(30px,4.4vw,44px);font-weight:800}
+h3{font-size:20px;font-weight:700}
+p{margin:0}
+a{color:var(--accent)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1120px;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.muted{color:var(--muted)}
+.kicker{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.tab{font-variant-numeric:tabular-nums}
+
+/* botones */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:10px 18px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);cursor:pointer;font-weight:700;text-decoration:none;color:var(--ink);transition:transform .12s,background .12s,border-color .12s}
+.btn:hover{transform:translateY(-1px);border-color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn.small{min-height:38px;padding:6px 14px;font-size:15px}
+
+/* barra superior */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:14px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);margin-right:auto;min-width:0}
+.brand b{display:block;font-family:var(--font-display);font-size:18px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand span{display:block;font-size:13px;color:var(--muted);line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand div{min-width:0}
+.topnav{display:flex;gap:4px}
+.topnav a{padding:8px 10px;border-radius:10px;text-decoration:none;color:var(--muted);font-weight:600;font-size:15px}
+.topnav a:hover{background:var(--surface-2);color:var(--ink)}
+.progress{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--muted);font-weight:600}
+.ring{width:28px;height:28px}
+@media (max-width:980px){.topnav{display:none}}
+@media (max-width:560px){.progress span{display:none}.top .btn .label{display:none}.top .btn{width:46px;padding:0}}
+
+/* portada */
+.hero{position:relative;margin:20px 0 26px;border-radius:28px;overflow:hidden;background:radial-gradient(130% 120% at 82% 0%,var(--night-2),var(--night) 62%);color:var(--night-ink);box-shadow:var(--shadow)}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%}
+.hero .inner{position:relative;padding:clamp(28px,6vw,64px) clamp(20px,5vw,56px);max-width:780px}
+.hero .kicker{color:var(--star)}
+.hero h1{font-size:clamp(46px,8.6vw,96px);font-weight:800;margin:14px 0 18px;letter-spacing:-.02em}
+.hero .lead{font-size:clamp(18px,2.2vw,21px);max-width:640px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:20px;color:var(--night-muted);font-size:15px;font-weight:600}
+.facts span{display:inline-flex;align-items:center;gap:7px}
+.facts i{width:7px;height:7px;border-radius:50%;background:var(--star);display:inline-block}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero .btn.primary{background:var(--star);border-color:var(--star);color:#111a30}
+.hero .btn.ghost{background:transparent;color:var(--night-ink);border-color:rgba(255,255,255,.32)}
+.hero .star{position:absolute;right:clamp(20px,9vw,120px);top:clamp(20px,6vw,64px);width:clamp(70px,12vw,140px);height:auto}
+@media (max-width:1000px){.hero .star{opacity:.4}}
+
+/* resumen de pasos */
+.overview{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin:0 0 12px;padding:0;list-style:none}
+.overview a{display:flex;flex-direction:column;gap:6px;height:100%;padding:16px;border-radius:16px;background:var(--surface);border:1px solid var(--line);text-decoration:none;color:var(--ink);transition:border-color .12s,transform .12s}
+.overview a:hover{border-color:var(--accent);transform:translateY(-1px)}
+.overview .n{font-family:var(--font-display);font-weight:800;font-size:26px;color:var(--accent);line-height:1}
+.overview b{font-size:16px;line-height:1.25}
+.overview small{color:var(--muted);font-size:14px}
+@media (max-width:900px){.overview{grid-template-columns:repeat(2,minmax(0,1fr))}.overview li:last-child{grid-column:1/-1}}
+
+/* pasos */
+.step{padding-block:56px 8px}
+.step + .step{border-top:1px solid var(--line);margin-top:40px}
+.step-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px 24px;margin-bottom:26px}
+.step-head .t{display:flex;flex-direction:column;gap:8px;max-width:720px}
+.step-head .t p{color:var(--muted);font-size:18px}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:4px 11px;border-radius:999px;background:var(--surface-2);font-size:14px;font-weight:700;color:var(--muted);white-space:nowrap}
+.cols{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:start}
+.cols.wide{grid-template-columns:minmax(0,1.6fr) minmax(0,1fr)}
+@media (max-width:860px){.cols,.cols.wide{grid-template-columns:minmax(0,1fr)}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.panel h3{margin-bottom:12px}
+.panel + .panel{margin-top:20px}
+.note{display:flex;gap:12px;padding:14px 16px;border-radius:14px;background:var(--accent-soft);font-size:16px}
+.note svg{flex:none;width:22px;height:22px;color:var(--accent);margin-top:2px}
+
+/* listas con casillas */
+.checks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.checks label{display:grid;grid-template-columns:24px minmax(0,1fr);gap:12px;padding:9px 6px;border-radius:10px;cursor:pointer;align-items:start}
+.checks label:hover{background:var(--surface-2)}
+.checks input{appearance:none;width:22px;height:22px;margin:2px 0 0;border:2px solid var(--muted);border-radius:7px;display:grid;place-items:center;cursor:pointer;background:var(--surface)}
+.checks input::after{content:"";width:11px;height:6px;border-left:2.5px solid var(--accent-ink);border-bottom:2.5px solid var(--accent-ink);transform:rotate(-45deg) translate(1px,-1px);opacity:0}
+.checks input:checked{background:var(--ok);border-color:var(--ok)}
+.checks input:checked::after{opacity:1;border-color:#fff}
+.checks .txt b{display:block}
+.checks .txt small{display:block;color:var(--muted);font-size:15px}
+.checks input:checked + .txt b{text-decoration:line-through;text-decoration-color:var(--muted)}
+
+ol.howto{margin:0;padding:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:14px}
+ol.howto li{counter-increment:s;display:grid;grid-template-columns:34px minmax(0,1fr);gap:12px}
+ol.howto li::before{content:counter(s);width:34px;height:34px;border-radius:10px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-family:var(--font-display);font-weight:800}
+.diagram{width:100%;height:auto;display:block}
+.diagram text{font-family:var(--font-body);font-size:16px;fill:var(--muted);font-weight:600}
+.diagram .strong{fill:var(--ink);font-weight:700}
+
+/* melodía */
+.melody{display:flex;flex-direction:column;gap:18px}
+.contour{display:grid;grid-template-columns:44px minmax(0,1fr);gap:8px}
+.axis{display:flex;flex-direction:column;justify-content:space-between;font-size:12px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;padding-block:2px}
+.lines{display:flex;flex-direction:column;gap:14px;min-width:0}
+.mline{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));grid-template-rows:repeat(12,12px);column-gap:6px;background:repeating-linear-gradient(to bottom,transparent 0 23px,var(--line) 23px 24px);border-radius:10px;padding:2px 0}
+.syl{grid-row-end:span 3;display:flex;align-items:center;justify-content:center;border-radius:9px;background:var(--accent-soft);color:var(--ink);font-weight:700;font-size:15px;white-space:nowrap;border:1.5px solid color-mix(in srgb,var(--accent) 35%,transparent);transition:background .1s,transform .1s;min-width:0;overflow:hidden}
+.syl.long{background:color-mix(in srgb,var(--duracion) 22%,var(--surface));border-color:color-mix(in srgb,var(--duracion) 55%,transparent)}
+.syl.on{background:var(--accent);color:var(--accent-ink);transform:scale(1.06)}
+@media (max-width:480px){.syl{font-size:13px}.mline{column-gap:3px}}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.seg{display:inline-flex;border:1.5px solid var(--line);border-radius:999px;padding:3px;background:var(--surface)}
+.seg button{border:0;background:transparent;padding:6px 12px;border-radius:999px;cursor:pointer;font-weight:700;font-size:15px;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--surface-2);color:var(--ink)}
+.lyrics{font-family:var(--font-display);font-size:clamp(22px,3vw,28px);font-weight:700;line-height:1.3}
+
+/* parámetros */
+.params{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+@media (max-width:860px){.params{grid-template-columns:minmax(0,1fr)}}
+.param{--c:var(--accent);background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;display:flex;flex-direction:column;gap:16px}
+.param header{display:flex;gap:14px;align-items:center}
+.badge{flex:none;width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:var(--c);color:var(--surface)}
+.badge svg{width:30px;height:30px}
+.param .k{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--c)}
+.param h3{font-size:26px;font-weight:800}
+.param .def{font-size:18px;font-weight:600}
+.param dl{margin:0;display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+.param dt{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.param dd{margin:2px 0 0}
+.param .say{font-style:italic}
+.pair{display:flex;flex-wrap:wrap;gap:8px}
+.pair .btn{border-color:color-mix(in srgb,var(--c) 45%,var(--line))}
+.pair .btn:hover{border-color:var(--c)}
+.pair .btn svg{color:var(--c)}
+
+/* tormenta */
+.dyn-wrap{overflow-x:auto}
+.dyn{width:100%;min-width:600px;height:auto;display:block}
+.dyn text{font-family:var(--font-body);font-size:12px;fill:var(--muted);font-weight:700}
+.dyn .lbl{fill:var(--ink);font-size:13px}
+.timeline{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.timeline li{display:grid;grid-template-columns:108px minmax(0,1fr);gap:14px;padding:14px 0;border-top:1px solid var(--line)}
+.timeline li:first-child{border-top:0}
+.timeline .when{font-weight:700;color:var(--muted);font-size:15px}
+.timeline .when b{display:block;font-family:var(--font-display);font-size:19px;color:var(--ink)}
+.timeline .what{display:flex;flex-direction:column;gap:6px}
+.res{display:flex;flex-wrap:wrap;gap:6px}
+.r{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;padding:2px 9px;border-radius:999px;background:var(--surface-2);color:var(--ink)}
+.r::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--rc)}
+.r.cuerpo,.r.voz{--rc:var(--cuerpo)} .r.citara{--rc:var(--citara)} .r.objeto{--rc:var(--objeto)}
+.r.din{--rc:var(--muted);font-style:italic;font-family:Georgia,serif}
+.objects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media (max-width:600px){.objects{grid-template-columns:minmax(0,1fr)}}
+.obj{padding:14px;border-radius:14px;background:var(--surface-2)}
+.obj b{display:block}
+.obj small{color:var(--muted);font-size:15px}
+
+/* guion */
+.script{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.scene{display:grid;grid-template-columns:96px minmax(0,1fr);gap:16px;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-radius:16px}
+.scene .when{font-weight:700;color:var(--muted);font-size:14px}
+.scene .when b{display:block;font-family:var(--font-display);font-size:22px;color:var(--ink)}
+.scene h3{font-size:19px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px}
+.scene .pl{font-family:var(--font-body);font-size:13px;font-weight:700;padding:2px 9px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+.scene .p-dot{width:10px;height:10px;border-radius:50%;background:var(--c,transparent);display:inline-block}
+.scene p{margin-top:6px}
+.scene .say{font-size:17px}
+.scene .say::before{content:"Dices: ";font-weight:700;color:var(--muted)}
+.scene .do{color:var(--muted);font-size:16px}
+.scene .do::before{content:"Haces: ";font-weight:700}
+@media (max-width:520px){.scene{grid-template-columns:minmax(0,1fr);gap:6px}.scene .when b{display:inline;margin-right:6px}}
+
+/* cronómetro */
+.clock{display:flex;flex-direction:column;gap:12px}
+.clock .big{font-family:var(--font-display);font-weight:800;font-size:56px;line-height:1}
+.bar{position:relative;height:12px;border-radius:999px;background:var(--surface-2);overflow:hidden}
+.bar i{position:absolute;inset:0 auto 0 0;width:0;background:var(--ok);border-radius:999px}
+.bar.warn i{background:var(--warn)} .bar.bad i{background:var(--bad)}
+.bar s{position:absolute;top:0;bottom:0;width:2px;background:var(--ink);opacity:.5;left:87.5%}
+.scale{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);font-weight:600}
+.status{font-weight:700}
+
+/* placas */
+.plates{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.plate{margin:0;display:flex;flex-direction:column;gap:8px}
+.plate .frame{aspect-ratio:16/9;max-width:100%;border-radius:12px;overflow:hidden;background:linear-gradient(135deg,#5d6b82,#2d3850);border:1px solid var(--line)}
+.plate img{width:100%;height:100%;object-fit:cover;display:block}
+.plate figcaption{font-size:14px;color:var(--muted)}
+.plate figcaption b{color:var(--ink)}
+
+/* rúbrica */
+.rubric label{grid-template-columns:24px minmax(0,1fr) auto}
+.pts{font-weight:800;font-family:var(--font-display);color:var(--accent);font-size:18px}
+
+footer{margin-top:64px;padding-block:28px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+
+/* modo ensayo */
+.rehearse{position:fixed;inset:0;z-index:60;background:var(--night);color:var(--night-ink);display:flex;flex-direction:column;
+  padding:calc(16px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(16px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.rehearse .rt{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;justify-content:space-between;max-width:1100px;width:100%;margin:0 auto}
+.rehearse .rt .meta{color:var(--night-muted);font-weight:700}
+.rehearse .rb{position:relative;flex:1;overflow:auto;max-width:1100px;width:100%;margin:0 auto;padding:24px 0;display:grid;grid-template-columns:minmax(0,1fr);gap:22px 40px;align-content:center;align-content:safe center;align-items:center}
+.rehearse .rb.has-lyr{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}
+@media (max-width:900px){.rehearse .rb.has-lyr{grid-template-columns:minmax(0,1fr)}}
+.rtext{display:flex;flex-direction:column;gap:16px;min-width:0}
+.rehearse .rb.has-lyr .rsay{font-size:clamp(19px,2.2vw,28px)}
+.rlyr{min-width:0;border:1px solid rgba(255,255,255,.16);border-radius:20px;padding:18px 20px;background:rgba(255,255,255,.04);display:flex;flex-direction:column;gap:14px}
+.rlh{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.rline{display:flex;flex-direction:column;gap:6px;min-width:0}
+.ltxt{font-family:var(--font-display);font-weight:700;font-size:clamp(24px,3.2vw,40px);line-height:1.15}
+.rline.piano .ltxt{font-weight:600;opacity:.72;font-size:clamp(20px,2.6vw,32px)}
+.rline.forte .ltxt{font-weight:800;font-size:clamp(28px,3.8vw,48px)}
+.cue{color:var(--star);font-weight:700;font-size:clamp(15px,1.6vw,19px)}
+.rgrid{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));column-gap:6px}
+.altura .rgrid{grid-template-rows:repeat(12,10px)}
+.duracion .rgrid{grid-auto-rows:46px}
+.rs{display:flex;align-items:center;justify-content:center;min-width:0;overflow:hidden;white-space:nowrap;padding-inline:2px;border-radius:10px;font-weight:700;font-size:clamp(14px,1.7vw,20px);background:rgba(171,152,255,.2);border:1.5px solid rgba(171,152,255,.65)}
+.altura .rs{grid-row-end:span 3}
+.duracion .rs{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.3)}
+.duracion .rs.long{background:rgba(64,205,185,.24);border-color:rgba(64,205,185,.8)}
+.rcount{position:absolute;inset:0;z-index:5;display:grid;place-items:center;background:color-mix(in srgb,var(--night) 86%,transparent);font-family:var(--font-display);font-weight:800;font-size:min(34vw,260px);color:var(--star)}
+.rcount small{display:block;font-family:var(--font-body);font-size:18px;font-weight:700;color:var(--night-muted);text-align:center;letter-spacing:.06em}
+.scene .slyr{margin-top:8px;padding:10px 12px;border-radius:12px;background:var(--surface-2);display:flex;flex-direction:column;gap:4px}
+.scene .slyr p{margin:0;font-size:16px}
+.scene .slyr span{color:var(--muted)}
+.rehearse .rk{font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--star);font-size:14px}
+.rehearse h2{font-size:clamp(34px,5vw,60px)}
+.rehearse .rsay{font-size:clamp(22px,3.2vw,38px);line-height:1.35;font-weight:500}
+.rehearse .rdo{font-size:clamp(17px,2vw,22px);color:var(--night-muted)}
+.rehearse ol{margin:0;padding-left:1.3em;font-size:clamp(17px,2vw,22px);color:var(--night-ink);display:flex;flex-direction:column;gap:6px}
+.rehearse ol b{color:var(--star)}
+.rehearse .rf{display:flex;align-items:center;justify-content:space-between;gap:12px;max-width:1100px;width:100%;margin:0 auto;flex-wrap:wrap}
+.rehearse .btn{background:transparent;color:var(--night-ink);border-color:rgba(255,255,255,.3)}
+.rehearse .btn.primary{background:var(--star);border-color:var(--star);color:#111a30}
+.rehearse .rclock{display:flex;align-items:center;gap:12px}
+.rehearse .rclock .big{font-family:var(--font-display);font-weight:800;font-size:40px}
+.rehearse .hint{color:var(--night-muted);font-size:14px;text-align:center;margin:10px auto 0;max-width:1100px}
+.rleft{margin-left:auto;color:var(--star);font-weight:700}
+.rprog{height:4px;max-width:1100px;width:100%;margin:12px auto 0;border-radius:999px;background:rgba(255,255,255,.12);overflow:hidden}
+.rprog i{display:block;height:100%;width:0;background:var(--star);border-radius:999px}
+.rset{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px 24px;max-width:1100px;width:100%;margin:14px auto 0;padding-top:14px;border-top:1px solid rgba(255,255,255,.12)}
+.switch{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:6px 16px 6px 6px;border-radius:999px;border:1.5px solid rgba(255,255,255,.3);background:transparent;color:var(--night-ink);font-weight:700;cursor:pointer}
+.switch .knob{position:relative;width:42px;height:26px;border-radius:999px;background:rgba(255,255,255,.2);transition:background .15s}
+.switch .knob::after{content:"";position:absolute;top:4px;left:4px;width:18px;height:18px;border-radius:50%;background:var(--night-ink);transition:transform .15s}
+.switch[aria-checked="true"] .knob{background:var(--star)}
+.switch[aria-checked="true"] .knob::after{transform:translateX(16px);background:var(--night)}
+.speed{display:inline-flex;align-items:center;gap:10px;font-weight:700}
+.speed input{width:min(220px,44vw);accent-color:var(--star);cursor:pointer}
+.speed output{min-width:52px;color:var(--star)}
+.rtotal{color:var(--night-muted);font-size:15px;font-weight:600}
+.rtotal.over{color:#ffb4a8}
+@media (max-width:600px){.rehearse .hint{display:none}.rleft{font-size:14px}}
+</style>
+
+<div class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="10" fill="#111a30"/><path d="M17 6 L19.6 14.4 L28 17 L19.6 19.6 L17 28 L14.4 19.6 L6 17 L14.4 14.4Z" fill="#f4c542"/></svg>
+      <div><b>Estrellita en la tormenta</b><span>Guía del video · MUSV0059 S3</span></div>
+    </a>
+    <nav class="topnav" aria-label="Pasos">
+      <a href="#paso-1">1 Cítara</a><a href="#paso-2">2 Melodía</a><a href="#paso-3">3 Parámetros</a><a href="#paso-4">4 Tormenta</a><a href="#paso-5">5 Grabar</a>
+    </nav>
+    <div class="progress" title="Casillas marcadas en esta guía">
+      <svg class="ring" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15" fill="none" stroke="var(--surface-2)" stroke-width="5"/><circle id="ringv" cx="18" cy="18" r="15" fill="none" stroke="var(--ok)" stroke-width="5" stroke-linecap="round" stroke-dasharray="0 100" transform="rotate(-90 18 18)" pathLength="100"/></svg>
+      <span id="progress-txt" class="tab">0 de 0 listo</span>
+    </div>
+    <button class="btn small" type="button" data-open-rehearsal>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+      <span class="label">Modo ensayo</span>
+    </button>
+  </div>
+</div>
+
+<main class="wrap" id="inicio">
+  <section class="hero" aria-labelledby="h1">
+    <canvas id="sky" aria-hidden="true"></canvas>
+    <svg class="star" viewBox="0 0 100 100" aria-hidden="true"><defs><radialGradient id="glow"><stop offset="0" stop-color="#f4c542" stop-opacity=".5"/><stop offset="1" stop-color="#f4c542" stop-opacity="0"/></radialGradient></defs><circle cx="50" cy="50" r="50" fill="url(#glow)"/><path d="M50 18 L58 42 L82 50 L58 58 L50 82 L42 58 L18 50 L42 42Z" fill="#f4c542"/></svg>
+    <div class="inner">
+      <div class="kicker">Guía para grabar el video · Sumativa semana 3 (recuperativa)</div>
+      <h1 id="h1">Estrellita en la tormenta</h1>
+      <p class="lead">Vas a construir una cítara de caja con elásticos, cantar «Estrellita, ¿dónde estás?» mostrando los cuatro parámetros del sonido y crear una tormenta de noche con tu cuerpo, la cítara y objetos de la casa.</p>
+      <div class="facts"><span><i></i>Video de 3:30 (máximo 4:00)</span><span><i></i>Trabajo individual, en una toma</span><span><i></i>Cítara lista en 20 minutos</span></div>
+      <div class="actions">
+        <a class="btn primary" href="#paso-1">Empezar: construir la cítara
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn ghost" href="#paso-5">Ver el guion</a>
+      </div>
+    </div>
+  </section>
+
+  <ol class="overview">
+    <li><a href="#paso-1"><span class="n">1</span><b>Construye la cítara</b><small>20 min · caja, elásticos y lápices</small></a></li>
+    <li><a href="#paso-2"><span class="n">2</span><b>Aprende el fragmento</b><small>10 min · con melodía guía</small></a></li>
+    <li><a href="#paso-3"><span class="n">3</span><b>Ensaya los parámetros</b><small>20 min · altura, duración, intensidad, timbre</small></a></li>
+    <li><a href="#paso-4"><span class="n">4</span><b>Prepara la tormenta</b><small>15 min · 7 momentos en 40 s</small></a></li>
+    <li><a href="#paso-5"><span class="n">5</span><b>Graba y entrega</b><small>Guion, cronómetro y revisión final</small></a></li>
+  </ol>
+
+  <!-- PASO 1 -->
+  <section class="step" id="paso-1" aria-labelledby="t1">
+    <div class="step-head">
+      <div class="t"><span class="kicker">Paso 1</span><h2 id="t1">Construye la cítara de caja</h2>
+        <p>Es un cordófono: suena porque los elásticos vibran y la caja amplifica esa vibración. Así puedes mostrar los cuatro parámetros con el mismo instrumento.</p></div>
+      <span class="chip">20 minutos</span>
+    </div>
+    <div class="cols">
+      <div>
+        <div class="panel">
+          <h3>Materiales reciclados</h3>
+          <ul class="checks" data-group="mat">
+            <li><label><input type="checkbox" id="m1"><span class="txt"><b>Una caja de cartón firme</b><small>La que tengas: de zapatos de niño, de galletas, de té. Ideal de 10 a 15 cm de ancho, para que los elásticos alcancen a rodearla. Es la caja de resonancia.</small></span></label></li>
+            <li><label><input type="checkbox" id="m2"><span class="txt"><b>5 elásticos iguales</b><small>Del mismo tamaño y grosor, por ejemplo de oficina. Son las cuerdas.</small></span></label></li>
+            <li><label><input type="checkbox" id="m3"><span class="txt"><b>2 lápices en desuso del mismo largo</b><small>Son los puentes: uno va recto y el otro en diagonal.</small></span></label></li>
+            <li><label><input type="checkbox" id="m4"><span class="txt"><b>Una tarjeta plástica en desuso</b><small>Para recortar la plumilla.</small></span></label></li>
+            <li><label><input type="checkbox" id="m5"><span class="txt"><b>Cinta de embalaje y tijeras o cuchillo cartonero</b><small>Para recortar el agujero, reforzar la caja y fijar los elásticos.</small></span></label></li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>Paso a paso</h3>
+          <ol class="howto">
+            <li><p>Cierra la caja con cinta (si tiene tapa, pégala) y refuerza todas las aristas. Si la tapa se siente blanda, pega por dentro un trozo de cartón.</p></li>
+            <li><p>Marca un círculo de 6 a 7 cm en el centro de la tapa (sirve un vaso o una tapa de frasco) y recórtalo. Es el <b>agujero</b> por donde sale el sonido.</p></li>
+            <li><p>Pega el <b>lápiz recto</b> a lo largo de la caja, a 1 cm del agujero. Pega el <b>lápiz diagonal</b> del otro lado: en el extremo izquierdo, cerca del borde de la caja; en el derecho, a unos 4 cm del lápiz recto. Puede cruzar sobre el agujero. Serán los puentes.</p></li>
+            <li><p>Pasa los 5 elásticos alrededor de la caja, <b>a lo ancho</b>, para que crucen sobre los dos lápices, separados unos 2,5 cm. A la izquierda queda más largo entre los lápices (grave) y a la derecha, menos (agudo).</p></li>
+            <li><p>Da vuelta la caja y pega una tira de cinta sobre los elásticos para que no se corran.</p></li>
+            <li><p>Recorta de la tarjeta un triángulo de 3 cm con las puntas redondeadas: es tu plumilla.</p></li>
+            <li><p>Prueba los elásticos del 1 al 5: tienen que ir de grave a agudo. Si dos suenan casi igual, inclina más el lápiz diagonal para que la diferencia de largo sea mayor.</p></li>
+          </ol>
+        </div>
+      </div>
+      <div>
+        <div class="panel">
+          <h3>Así queda, vista desde arriba</h3>
+          <svg class="diagram" viewBox="0 0 600 336" role="img" aria-label="Diagrama: caja con un agujero redondo, un lápiz recto y otro en diagonal, y cinco elásticos iguales que los cruzan a lo ancho; el largo que vibra se acorta de izquierda a derecha.">
+            <defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10Z" fill="var(--muted)"/></marker></defs>
+            <g text-anchor="middle"><text x="154" y="20" class="strong">1</text><text x="204" y="20" class="strong">2</text><text x="254" y="20" class="strong">3</text><text x="304" y="20" class="strong">4</text><text x="354" y="20" class="strong">5</text></g>
+            <rect x="40" y="40" width="440" height="200" rx="14" fill="var(--surface-2)" stroke="var(--muted)" stroke-width="2"/>
+            <circle cx="254" cy="140" r="54" fill="var(--hole)"/>
+            <rect x="112" y="190" width="290" height="12" rx="3" fill="var(--pencil)"/><path d="M402 190 L420 196 L402 202Z" fill="var(--pencil-tip)"/>
+            <g transform="rotate(17.96 112 62)"><rect x="112" y="56" width="305" height="12" rx="3" fill="var(--pencil)"/><path d="M417 56 L435 62 L417 68Z" fill="var(--pencil-tip)"/></g>
+            <g stroke="var(--band)" stroke-linecap="round"><line x1="154" y1="30" x2="154" y2="250" stroke-width="3" opacity=".4"/><line x1="204" y1="30" x2="204" y2="250" stroke-width="3" opacity=".4"/><line x1="254" y1="30" x2="254" y2="250" stroke-width="3" opacity=".4"/><line x1="304" y1="30" x2="304" y2="250" stroke-width="3" opacity=".4"/><line x1="354" y1="30" x2="354" y2="250" stroke-width="3" opacity=".4"/><line x1="154" y1="75.6" x2="154" y2="196" stroke-width="4.5"/><line x1="204" y1="91.8" x2="204" y2="196" stroke-width="4.5"/><line x1="254" y1="108.0" x2="254" y2="196" stroke-width="4.5"/><line x1="304" y1="124.2" x2="304" y2="196" stroke-width="4.5"/><line x1="354" y1="140.4" x2="354" y2="196" stroke-width="4.5"/></g>
+            <text x="494" y="150">lápiz</text><text x="494" y="168">diagonal</text>
+            <text x="494" y="200">lápiz</text><text x="494" y="218">recto</text>
+            <path d="M532 240 L566 250 L540 270Z" fill="var(--accent)"/><text x="522" y="294">plumilla</text>
+            <path d="M154 272 L354 272" stroke="var(--muted)" stroke-width="2" marker-end="url(#arr)"/>
+            <text x="154" y="296" text-anchor="middle">largo: grave</text><text x="354" y="296" text-anchor="middle">corto: agudo</text>
+            <text x="260" y="326" text-anchor="middle">círculo oscuro: el agujero · en color: la parte que vibra</text>
+          </svg>
+        </div>
+        <div class="panel">
+          <h3>Prueba de calidad</h3>
+          <p class="muted" style="margin-bottom:8px">Si cumple las cuatro, la construcción es firme y funcional (criterio 1).</p>
+          <ul class="checks" data-group="qa">
+            <li><label><input type="checkbox" id="q1"><span class="txt"><b>La caja no se hunde cuando pulsas fuerte</b></span></label></li>
+            <li><label><input type="checkbox" id="q2"><span class="txt"><b>Los elásticos y el lápiz diagonal no se corren ni se sueltan</b></span></label></li>
+            <li><label><input type="checkbox" id="q3"><span class="txt"><b>Ningún elástico toca la caja entre los lápices</b><small>Si la toca, zumba en vez de sonar limpio.</small></span></label></li>
+            <li><label><input type="checkbox" id="q4"><span class="txt"><b>Del 1 al 5 se oye claro de grave a agudo</b></span></label></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PASO 2 -->
+  <section class="step" id="paso-2" aria-labelledby="t2">
+    <div class="step-head">
+      <div class="t"><span class="kicker">Paso 2</span><h2 id="t2">Aprende el fragmento de «Estrellita»</h2>
+        <p>Usarás solo las dos primeras frases. Primero sube y después baja, así que sirve para mostrar la altura.</p></div>
+      <span class="chip">10 minutos</span>
+    </div>
+    <div class="panel melody">
+      <p class="lyrics">Estrellita, ¿dónde estás?<br>Me pregunto qué serás.</p>
+      <div class="contour">
+        <div class="axis" aria-hidden="true"><span>agudo</span><span>grave</span></div>
+        <div class="lines" id="contour" aria-label="Melodía: cada sílaba aparece a la altura de su nota"></div>
+      </div>
+      <div class="controls">
+        <button class="btn primary" type="button" id="play">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5v14l12-7z"/></svg><span>Escuchar melodía guía</span>
+        </button>
+        <div class="seg" role="group" aria-label="Velocidad">
+          <button type="button" data-tempo="72" aria-pressed="false">Lenta</button>
+          <button type="button" data-tempo="88" aria-pressed="true">Normal</button>
+        </div>
+        <div class="seg" role="group" aria-label="Pulso">
+          <button type="button" id="pulse" aria-pressed="true">Con pulso</button>
+        </div>
+      </div>
+      <div class="note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.5"/></svg>
+        <p>Cada sílaba está a la altura de su nota: más arriba es más agudo. Las sílabas verdes («tás», «rás») duran el doble. Si la guía te queda alta o baja, canta en tu tono; lo importante es que la melodía suba y baje igual. Acompáñala con un toque en el elástico 3 en cada pulso.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PASO 3 -->
+  <section class="step" id="paso-3" aria-labelledby="t3">
+    <div class="step-head">
+      <div class="t"><span class="kicker">Paso 3</span><h2 id="t3">Los cuatro parámetros, uno por uno</h2>
+        <p>En cada parámetro haces lo mismo: lo nombras, muestras el contraste en la cítara y cantas el fragmento aplicándolo con el cuerpo y el instrumento. Escucha los ejemplos para saber qué buscar.</p></div>
+      <span class="chip">20 minutos · 25 s cada uno en el video</span>
+    </div>
+    <div class="params">
+      <article class="param" style="--c:var(--altura)">
+        <header><div class="badge"><svg viewBox="0 0 70 70" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 54 L28 40 L38 46 L56 18"/><path d="M44 18h12v12"/></svg></div>
+          <div><div class="k">Parámetro 1 de 4</div><h3>Altura</h3></div></header>
+        <p class="def">Si un sonido es grave o agudo.</p>
+        <dl>
+          <div><dt>Con la cítara</dt><dd>Elástico 1 (vibra largo, grave) y elástico 5 (vibra corto, agudo). Si presionas un elástico con un dedo, también sube.</dd></div>
+          <div><dt>En la canción</dt><dd>Tu mano sigue la melodía: abajo en «Es-tre», sube en «lli-ta», llega arriba en «dón-de» y baja escalón por escalón en «Me pre-gun-to qué se-rás».</dd></div>
+          <div><dt>Lo dices así</dt><dd class="say">«La altura nos dice si un sonido es grave o agudo».</dd></div>
+        </dl>
+        <div class="pair"><button class="btn small" type="button" data-snd="grave"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5v14l12-7z"/></svg>Grave</button><button class="btn small" type="button" data-snd="agudo"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5v14l12-7z"/></svg>Agudo</button></div>
+      </article>
+      <article class="param" style="--c:var(--duracion)">
+        <header><div class="badge"><svg viewBox="0 0 70 70" fill="currentColor" aria-hidden="true"><rect x="10" y="20" width="12" height="10" rx="4"/><rect x="28" y="20" width="12" height="10" rx="4"/><rect x="10" y="40" width="50" height="10" rx="4"/></svg></div>
+          <div><div class="k">Parámetro 2 de 4</div><h3>Duración</h3></div></header>
+        <p class="def">Cuánto tiempo se mantiene un sonido: corto o largo.</p>
+        <dl>
+          <div><dt>Con la cítara</dt><dd>Pulsa y deja sonar (largo). Pulsa y apaga al tiro con la palma (corto).</dd></div>
+          <div><dt>En la canción</dt><dd>Una palmada corta en cada sílaba corta y el brazo deslizándose en «es-tás» y «se-rás», que duran el doble.</dd></div>
+          <div><dt>Lo dices así</dt><dd class="say">«La duración nos dice si un sonido es corto o largo».</dd></div>
+        </dl>
+        <div class="pair"><button class="btn small" type="button" data-snd="largo"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5v14l12-7z"/></svg>Largo</button><button class="btn small" type="button" data-snd="corto"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5v14l12-7z"/></svg>Corto</button></div>
+      </article>
+      <article class="param" style="--c:var(--intensidad)">
+        <header><div class="badge"><svg viewBox="0 0 70 70" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" aria-hidden="true"><path d="M12 35h4M24 28v14M36 18v34M48 10v50"/></svg></div>
+          <div><div class="k">Parámetro 3 de 4</div><h3>Intensidad</h3></div></header>
+        <p class="def">Si un sonido es suave o fuerte.</p>
+        <dl>
+          <div><dt>Con la cítara</dt><dd>Pulsa suave (piano) y luego con fuerza (forte), siempre el mismo elástico.</dd></div>
+          <div><dt>En la canción</dt><dd>Primera frase muy suave, con dos dedos sobre la palma y un gesto pequeño. Segunda frase fuerte, sin gritar, con palmas y pisadas.</dd></div>
+          <div><dt>Lo dices así</dt><dd class="say">«La intensidad nos dice si un sonido es suave o fuerte».</dd></div>
+        </dl>
+        <div class="pair"><button class="btn small" type="button" data-snd="suave"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5v14l12-7z"/></svg>Suave</button><button class="btn small" type="button" data-snd="fuerte"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5v14l12-7z"/></svg>Fuerte</button></div>
+      </article>
+      <article class="param" style="--c:var(--timbre)">
+        <header><div class="badge"><svg viewBox="0 0 70 70" fill="currentColor" aria-hidden="true"><circle cx="20" cy="22" r="9"/><rect x="40" y="13" width="18" height="18" rx="3"/><path d="M29 60 L20 42 L38 42Z"/><path d="M49 40l10 10-10 10-10-10z"/></svg></div>
+          <div><div class="k">Parámetro 4 de 4</div><h3>Timbre</h3></div></header>
+        <p class="def">La cualidad que nos permite reconocer qué o quién produce el sonido.</p>
+        <dl>
+          <div><dt>Con la cítara</dt><dd>El mismo elástico con la yema del dedo (suave, opaco) y con la plumilla (brillante).</dd></div>
+          <div><dt>En la canción</dt><dd>Primera frase acompañada con palmas y segunda con la cítara y la plumilla. La melodía es la misma; cambia el timbre.</dd></div>
+          <div><dt>Lo dices así</dt><dd class="say">«El timbre nos permite reconocer qué o quién produce el sonido».</dd></div>
+        </dl>
+        <div class="pair"><button class="btn small" type="button" data-snd="yema"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5v14l12-7z"/></svg>Con la yema</button><button class="btn small" type="button" data-snd="plumilla"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5v14l12-7z"/></svg>Con plumilla</button></div>
+      </article>
+    </div>
+    <div class="note" style="margin-top:18px">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17v.5"/></svg>
+      <p><b>Cambia un parámetro a la vez.</b> Mientras muestras la altura, canta siempre con la misma fuerza; mientras muestras la intensidad, no cambies la velocidad. Así se nota que sabes diferenciarlos (criterio 3, el de mayor puntaje entre los parámetros).</p>
+    </div>
+  </section>
+
+  <!-- PASO 4 -->
+  <section class="step" id="paso-4" aria-labelledby="t4">
+    <div class="step-head">
+      <div class="t"><span class="kicker">Paso 4</span><h2 id="t4">La tormenta de noche</h2>
+        <p>Una secuencia de 40 segundos que se reconoce por sus sonidos: grillos, viento, gotas, aguacero, trueno y calma. Cuando termina, vuelve a brillar la estrellita, y así la secuencia se une a la canción.</p></div>
+      <span class="chip">15 minutos · 3 ensayos sin cámara</span>
+    </div>
+    <div class="panel">
+      <h3>Objetos de la casa</h3>
+      <div class="objects">
+        <label class="obj checks"><span style="display:grid;grid-template-columns:24px minmax(0,1fr);gap:12px"><input type="checkbox" id="o1"><span class="txt"><b>Peineta</b><small>Raspada con la uña: grillos.</small></span></span></label>
+        <label class="obj checks"><span style="display:grid;grid-template-columns:24px minmax(0,1fr);gap:12px"><input type="checkbox" id="o2"><span class="txt"><b>Vaso con arroz y una olla</b><small>El arroz cayendo en la olla: lluvia sobre el techo.</small></span></span></label>
+        <label class="obj checks"><span style="display:grid;grid-template-columns:24px minmax(0,1fr);gap:12px"><input type="checkbox" id="o3"><span class="txt"><b>Bandeja de horno metálica</b><small>Sacudida desde un extremo: trueno.</small></span></span></label>
+      </div>
+      <p class="muted" style="margin-top:14px">Siéntate en una silla con la cítara sobre las piernas o en una mesa baja. Deja la olla con el vaso de arroz a tu izquierda, la bandeja a tu derecha y la peineta a mano.</p>
+    </div>
+    <div class="panel">
+      <h3>Cómo crece y se calma la tormenta</h3>
+      <div class="dyn-wrap"><svg class="dyn" id="dyn" viewBox="0 0 760 250" role="img" aria-label="Curva de intensidad de la secuencia: empieza suave, crece hasta el trueno a los 25 segundos y baja hasta el silencio antes de la estrellita."></svg></div>
+    </div>
+    <div class="panel">
+      <h3>Los 7 momentos</h3>
+      <ol class="timeline" id="timeline"></ol>
+      <div class="note" style="margin-top:12px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.5"/></svg>
+        <p>Anuncia la tormenta en una frase antes de empezar y después no hables: los sonidos cuentan la historia. Así se entiende la intención (criterio 5) y la secuencia se reconoce completa (criterio 6, el de mayor puntaje).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PASO 5 -->
+  <section class="step" id="paso-5" aria-labelledby="t5">
+    <div class="step-head">
+      <div class="t"><span class="kicker">Paso 5</span><h2 id="t5">Graba y entrega</h2>
+        <p>Diez bloques seguidos que suman 3:30, con 30 segundos de margen antes del límite de 4:00. En el modo ensayo los bloques avanzan solos al ritmo del cronómetro y puedes ajustar la velocidad.</p></div>
+      <button class="btn primary" type="button" data-open-rehearsal>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Abrir modo ensayo</button>
+    </div>
+    <div class="cols wide">
+      <ol class="script" id="script"></ol>
+      <div>
+        <div class="panel clock" id="clock">
+          <h3>Cronómetro de ensayo</h3>
+          <div class="big tab" data-clock-big>0:00</div>
+          <div class="bar" data-clock-bar><i></i><s title="3:30"></s></div>
+          <div class="scale tab"><span>0:00</span><span>3:30</span><span>4:00</span></div>
+          <p class="status" data-clock-status>Listo para empezar.</p>
+          <div class="controls">
+            <button class="btn primary small" type="button" data-clock-toggle>Iniciar</button>
+            <button class="btn small" type="button" data-clock-reset>Reiniciar</button>
+          </div>
+        </div>
+        <div class="panel">
+          <h3>Antes de grabar</h3>
+          <ol class="howto">
+            <li><p>Celular <b>horizontal</b>, a la altura del pecho y a 1,5–2 m. Que se vean tus manos, tus pies, la cítara y los objetos.</p></li>
+            <li><p>Pieza silenciosa: apaga la tele y el ventilador. La luz de una ventana, de frente a ti.</p></li>
+            <li><p>Graba 10 segundos de prueba y escúchalos: la cítara y la voz se tienen que oír claras.</p></li>
+            <li><p>Graba de corrido. Si te equivocas, repite el bloque completo y luego corta el error al editar.</p></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" style="margin-top:20px">
+      <h3>Placas para el video</h3>
+      <p class="muted" style="margin-bottom:14px">Están en la carpeta <b>02_Placas_video</b>. El video no se corta: es una sola grabación y las imágenes van <b>encima</b>, como una capa. La portada tapa toda la pantalla los primeros 3 segundos mientras se escucha tu saludo. Las otras seis son transparentes y solo ocupan la esquina inferior izquierda, así que tú sigues viéndote. Por eso no alargan el video.</p>
+      <div class="plates">
+        <figure class="plate"><div class="frame"><img src="placas/01_portada.png" alt="Placa de portada" loading="lazy"></div><figcaption><b>01 Portada</b> · desde el segundo 0, mientras dices «Hola, soy Carry…» · 3 s</figcaption></figure>
+        <figure class="plate"><div class="frame"><img src="placas/02_instrumento.png" alt="Rótulo del instrumento" loading="lazy"></div><figcaption><b>02 Instrumento</b> · cuando dices «Esta es mi cítara…» · 6–8 s</figcaption></figure>
+        <figure class="plate"><div class="frame"><img src="placas/03_altura.png" alt="Rótulo de altura" loading="lazy"></div><figcaption><b>03 Altura</b> · cuando dices «La altura nos dice…» · 6–8 s</figcaption></figure>
+        <figure class="plate"><div class="frame"><img src="placas/04_duracion.png" alt="Rótulo de duración" loading="lazy"></div><figcaption><b>04 Duración</b> · cuando dices «La duración nos dice…» · 6–8 s</figcaption></figure>
+        <figure class="plate"><div class="frame"><img src="placas/05_intensidad.png" alt="Rótulo de intensidad" loading="lazy"></div><figcaption><b>05 Intensidad</b> · cuando dices «La intensidad nos dice…» · 6–8 s</figcaption></figure>
+        <figure class="plate"><div class="frame"><img src="placas/06_timbre.png" alt="Rótulo de timbre" loading="lazy"></div><figcaption><b>06 Timbre</b> · cuando dices «El timbre nos permite…» · 6–8 s</figcaption></figure>
+        <figure class="plate"><div class="frame"><img src="placas/07_tormenta.png" alt="Rótulo de la tormenta" loading="lazy"></div><figcaption><b>07 Tormenta</b> · con el primer sonido de la tormenta (los grillos) · 8 s</figcaption></figure>
+      </div>
+      <div class="cols" style="margin-top:22px">
+        <div>
+          <h3>Cómo ponerlas en CapCut</h3>
+          <ol class="howto">
+            <li><p>Crea un proyecto nuevo y agrega tu video completo. Debe estar grabado en horizontal, para que las placas calcen.</p></li>
+            <li><p>Mueve la línea de reproducción al momento donde empieza el bloque, por ejemplo cuando dices «La altura nos dice…».</p></li>
+            <li><p>En el celular, toca <b>Superposición</b> y luego <b>Agregar superposición</b>, y elige la imagen. En el computador, arrastra la imagen a una pista sobre el video.</p></li>
+            <li><p>Agrándala hasta que calce con los bordes del video. Así el rótulo queda solo en su esquina.</p></li>
+            <li><p>Arrastra el final de la imagen en la línea de tiempo para que dure lo indicado: 3 s la portada y de 6 a 8 s las demás.</p></li>
+            <li><p>Repite con cada placa, revisa que el video siga durando 4:00 o menos y expórtalo en 1080p.</p></li>
+          </ol>
+        </div>
+        <div class="note" style="align-self:start">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5v.5"/></svg>
+          <p><b>En Canva funciona igual.</b> Pon la imagen encima del video, agrándala a toda la página y ajusta en la línea de tiempo cuándo aparece y cuánto dura. Nunca pongas una placa entre dos partes del video, porque eso sí lo alarga.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cols" style="margin-top:20px">
+      <div class="panel">
+        <h3>Entregar</h3>
+        <ul class="checks" data-group="entrega">
+          <li><label><input type="checkbox" id="e1"><span class="txt"><b>El video dura 4:00 o menos</b><small>Revisa la duración del MP4 exportado.</small></span></label></li>
+          <li><label><input type="checkbox" id="e2"><span class="txt"><b>Súbelo con acceso abierto</b><small>YouTube como «No listado», o Drive con «Cualquier persona con el enlace» como lector.</small></span></label></li>
+          <li><label><input type="checkbox" id="e3"><span class="txt"><b>Prueba el enlace en una ventana de incógnito</b><small>Tiene que reproducirse sin pedir acceso.</small></span></label></li>
+          <li><label><input type="checkbox" id="e4"><span class="txt"><b>Pega el enlace en el Word</b><small>Reemplaza el campo amarillo [COMPLETAR] y quita el resaltado.</small></span></label></li>
+          <li><label><input type="checkbox" id="e5"><span class="txt"><b>Guarda el Word como PDF y entrega</b><small>S3_Gutierrez_MUSV.pdf (1 página) junto con el enlace o el MP4.</small></span></label></li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Revisión con la rúbrica</h3>
+        <ul class="checks rubric" id="rubric" data-group="rub"></ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Guía preparada para Carry Constanza Gutiérrez · MUSV0059, Evaluación sumativa semana 3 (recuperativa) · Santo Tomás, Sede Online. Las casillas se guardan solo en este navegador.
+  </footer>
+</main>
+
+<div class="rehearse" id="rehearse" role="dialog" aria-modal="true" aria-labelledby="r-title" hidden>
+  <div class="rt"><span class="meta tab" id="r-meta">Bloque 1 de 10 · 0:00–0:12</span>
+    <span class="rleft tab" id="r-left"></span>
+    <button class="btn small" type="button" id="r-close">Cerrar</button></div>
+  <div class="rprog" aria-hidden="true"><i id="r-prog"></i></div>
+  <div class="rb" id="r-body">
+    <div class="rtext">
+      <div class="rk" id="r-placa"></div>
+      <h2 id="r-title"></h2>
+      <p class="rsay" id="r-say"></p>
+      <p class="rdo" id="r-do"></p>
+      <ol id="r-storm" hidden></ol>
+    </div>
+    <div id="r-lyr" hidden></div>
+  </div>
+  <div class="rcount" id="r-count" hidden></div>
+  <div class="rf">
+    <button class="btn" type="button" id="r-prev">← Anterior</button>
+    <div class="rclock"><span class="big tab" data-clock-big>0:00</span>
+      <button class="btn primary small" type="button" data-clock-toggle>Iniciar</button>
+      <button class="btn small" type="button" data-clock-reset>Reiniciar</button></div>
+    <button class="btn" type="button" id="r-next">Siguiente →</button>
+  </div>
+  <div class="rset">
+    <button class="switch" type="button" id="r-auto" role="switch" aria-checked="true"><span class="knob" aria-hidden="true"></span>Avance automático</button>
+    <label class="speed" for="r-speed"><span>Velocidad</span>
+      <input type="range" id="r-speed" min="0.6" max="1.4" step="0.05" value="1">
+      <output id="r-speed-out" class="tab" for="r-speed">1×</output></label>
+    <span class="rtotal tab" id="r-total">A esta velocidad el guion dura 3:30</span>
+  </div>
+  <p class="hint">← → cambian de bloque · Espacio inicia o pausa (con cuenta de 3 s) · A activa o quita el avance automático · + y − cambian la velocidad</p>
+</div>
+
+<script>
+const GUION = [
+  {t:[0,12], titulo:'Saludo', placa:'Placa 01 · Portada, encima de los primeros 3 s',
+   dices:'Hola, soy Carry Constanza Gutiérrez. Hoy les presento mi instrumento hecho con material reciclado, voy a cantar «Estrellita, ¿dónde estás?» mostrando los cuatro parámetros del sonido y terminaré con una tormenta de noche.',
+   haces:'Mira a la cámara, con la cítara sobre las piernas.'},
+  {t:[12,40], titulo:'El instrumento', placa:'Placa 02 · Instrumento',
+   dices:'Esta es mi cítara de caja con elásticos. La hice con una caja de cartón con un agujero, cinco elásticos iguales, dos lápices como puentes, cinta y una plumilla de tarjeta. Es un cordófono: suena por la vibración de cuerdas tensas, y la caja amplifica el sonido. Como un lápiz va en diagonal, cada elástico vibra en un largo distinto: del más largo al más corto, de grave a agudo.',
+   haces:'Acerca la cítara a la cámara y muestra el lápiz diagonal y el agujero. Al final, pulsa los elásticos del 1 al 5.'},
+  {t:[40,52], titulo:'La canción', placa:'',
+   dices:'Este es el fragmento que voy a usar.',
+   haces:'Canta «Estrellita, ¿dónde estás? Me pregunto qué serás» marcando el pulso en el elástico 3.'},
+  {t:[52,77], titulo:'Altura', param:'altura', placa:'Placa 03 · Altura',
+   dices:'La altura nos dice si un sonido es grave o agudo. Este elástico largo suena grave… y este corto, agudo. Ahora mi mano sigue la melodía: sube con los sonidos agudos y baja con los graves.',
+   haces:'Pulsa el 1 y luego el 5. Canta el fragmento subiendo y bajando la mano con la melodía, con la misma fuerza todo el rato.'},
+  {t:[77,102], titulo:'Duración', param:'duracion', placa:'Placa 04 · Duración',
+   dices:'La duración nos dice si un sonido es corto o largo. Si dejo vibrar el elástico, el sonido es largo… si lo apago con la palma, es corto. En la canción, los sonidos cortos van con palmadas y los largos, con mi brazo.',
+   haces:'Canta con una palmada en cada sílaba corta y desliza el brazo en «es-tás» y «se-rás».'},
+  {t:[102,126], titulo:'Intensidad', param:'intensidad', placa:'Placa 05 · Intensidad',
+   dices:'La intensidad nos dice si un sonido es suave o fuerte. Pulso suave… y fuerte. Canto la primera frase muy suave, como si la estrellita durmiera, y la segunda fuerte, para despertarla.',
+   haces:'Primera frase piano: voz suave y dos dedos sobre la palma. Segunda frase forte: palmas y pisadas, sin gritar.'},
+  {t:[126,151], titulo:'Timbre', param:'timbre', placa:'Placa 06 · Timbre',
+   dices:'El timbre nos permite reconocer qué o quién produce el sonido. Con la yema del dedo suena suave… con la plumilla, más brillante. Ahora, la misma melodía con distintos timbres: primero palmas, después la cítara.',
+   haces:'Canta la primera frase acompañada con palmas y la segunda con la cítara y la plumilla.'},
+  {t:[151,161], titulo:'Anuncio de la tormenta', placa:'',
+   dices:'Ahora, una secuencia sonora: una tormenta de noche. Escuchen los grillos, el viento, las gotas, el aguacero y el trueno… y cuando la tormenta se va, vuelve a brillar la estrellita.',
+   haces:'Toma la peineta: es lo primero que suena.'},
+  {t:[161,201], titulo:'Tormenta de noche', placa:'Placa 07 · Tormenta', storm:true,
+   dices:'Sin hablar: los sonidos cuentan la historia.',
+   haces:'Sigue los 7 momentos del paso 4.'},
+  {t:[201,210], titulo:'Cierre', placa:'',
+   dices:'Con mi cuerpo, mi cítara y objetos de la casa exploramos la altura, la duración, la intensidad y el timbre. ¡Gracias por escuchar!',
+   haces:'Mira a la cámara 2 segundos antes de cortar.'}
+];
+const TORMENTA = [
+  {t:[0,4], nombre:'Noche', haces:'Raspa la peineta con la uña, suave y con pausas: grillos.', rec:['objeto'], din:'p', lv:2},
+  {t:[4,9], nombre:'Viento', haces:'Frota las palmas y sopla «fffff», cada vez más fuerte.', rec:['cuerpo'], din:'p → mf', lv:3},
+  {t:[9,15], nombre:'Gotas', haces:'Chasquidos de dedos y toques cortos en los elásticos 4 y 5, salteados.', rec:['cuerpo','citara'], din:'mf', lv:3},
+  {t:[15,23], nombre:'Aguacero', haces:'Palmas rápidas en los muslos; después deja caer arroz en la olla mientras rasgueas rápido todos los elásticos.', rec:['cuerpo','objeto','citara'], din:'f', lv:4},
+  {t:[23,27], nombre:'Trueno', haces:'Sacude la bandeja de horno, da un pisotón y pulsa fuerte el elástico 1.', rec:['objeto','cuerpo','citara'], din:'ff', lv:5},
+  {t:[27,33], nombre:'Calma', haces:'Rasgueo cada vez más lento, luego gotas cada vez más separadas, hasta el silencio.', rec:['citara','cuerpo'], din:'f → pp', lv:1},
+  {t:[33,40], nombre:'Estrellita', haces:'Pulsa suave el elástico 5, déjalo sonar y canta muy suave «Estrellita, ¿dónde estás?».', rec:['citara','voz'], din:'pp', lv:1}
+];
+const RUBRICA = [
+  {pts:10, nombre:'Confección del instrumento', como:'Pasa la prueba de calidad del paso 1 y la muestras de cerca.'},
+  {pts:10, nombre:'Clasificación del instrumento', como:'El informe y tu frase del bloque 2: cordófono, vibración de cuerdas tensas.'},
+  {pts:20, nombre:'Identificación y diferenciación de parámetros', como:'Nombras cada uno, muestras su contraste y cambias solo ese parámetro.'},
+  {pts:15, nombre:'Ejemplificación de los parámetros', como:'Los cuatro aparecen mientras cantas, con cuerpo y cítara.'},
+  {pts:15, nombre:'Uso intencionado de recursos sonoros', como:'Anuncias la tormenta y cada sonido representa algo concreto.'},
+  {pts:25, nombre:'Recreación de una situación sonora', como:'Siete momentos en orden, con cuerpo, cítara y tres objetos.'},
+  {pts:5, nombre:'Aspectos formales', como:'Informe de 1 página en PDF, video de 4:00 o menos y enlace abierto.'}
+];
+const REC = {cuerpo:'Cuerpo', voz:'Voz', citara:'Cítara', objeto:'Objeto'};
+const MELODIA = [[62,1,'Es'],[62,1,'tre'],[69,1,'lli'],[69,1,'ta,'],[71,1,'¿dón'],[71,1,'de es'],[69,2,'tás?'],
+                 [67,1,'Me'],[67,1,'pre'],[66,1,'gun'],[66,1,'to'],[64,1,'qué'],[64,1,'se'],[62,2,'rás.']];
+const fmt = s => { s = Math.max(0, Math.floor(s)); return Math.floor(s/60) + ':' + String(s%60).padStart(2,'0'); };
+const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* ---------- letra que se canta en cada bloque ---------- */
+const L1 = 'Estrellita, ¿dónde estás?', L2 = 'Me pregunto qué serás.';
+const LETRAS = {
+  'La canción': {tipo:'lineas', lineas:[[L1,'Un toque en el elástico 3 en cada sílaba'],[L2,'Un toque en el elástico 3 en cada sílaba']]},
+  'Altura': {tipo:'altura', lineas:[[L1,'↗ La mano sube con la melodía'],[L2,'↘ La mano baja escalón por escalón']]},
+  'Duración': {tipo:'duracion', lineas:[[L1,'Palmada en cada sílaba corta · brazo largo en «tás»'],[L2,'Palmada en cada sílaba corta · brazo largo en «rás»']]},
+  'Intensidad': {tipo:'intensidad', lineas:[[L1,'piano · muy suave, dos dedos sobre la palma'],[L2,'forte · fuerte, con palmas y pisadas, sin gritar']]},
+  'Timbre': {tipo:'lineas', lineas:[[L1,'Acompañas con palmas'],[L2,'Acompañas con la cítara y la plumilla']]},
+  'Tormenta de noche': {tipo:'lineas', lineas:[[L1,'Al final de la tormenta: muy suave (pp), con el elástico 5 sonando']]}
+};
+GUION.forEach(g => { if (LETRAS[g.titulo]) g.letra = LETRAS[g.titulo]; });
+
+/* ---------- guion ---------- */
+document.getElementById('script').innerHTML = GUION.map((g,i) => `
+  <li class="scene"${g.param ? ` style="--c:var(--${g.param})"` : ''}>
+    <div class="when tab"><b>${fmt(g.t[0])}</b>${g.t[1]-g.t[0]} s</div>
+    <div><h3>${g.param ? '<span class="p-dot" aria-hidden="true"></span>' : ''}${i+1}. ${esc(g.titulo)}${g.placa ? `<span class="pl">${esc(g.placa.split(' · ')[0])}</span>` : ''}</h3>
+      <p class="say">${esc(g.dices)}</p><p class="do">${esc(g.haces)}</p>${g.letra ? `<div class="slyr">${g.letra.lineas.map(([t,c]) => `<p><b>♪ ${esc(t)}</b> <span>· ${esc(c)}</span></p>`).join('')}</div>` : ''}</div>
+  </li>`).join('');
+
+/* ---------- tormenta: lista y curva ---------- */
+document.getElementById('timeline').innerHTML = TORMENTA.map(m => `
+  <li><div class="when tab"><b>${esc(m.nombre)}</b>${m.t[0]}–${m.t[1]} s</div>
+    <div class="what"><p>${esc(m.haces)}</p>
+      <div class="res">${m.rec.map(r => `<span class="r ${r}">${REC[r]}</span>`).join('')}<span class="r din">${esc(m.din)}</span></div></div></li>`).join('');
+(function drawDyn(){
+  const svg = document.getElementById('dyn');
+  const X0 = 52, X1 = 744, Y0 = 200, YT = 46, T = 40;
+  const x = t => X0 + (X1 - X0) * t / T;
+  const levels = ['silencio','pp','p','mf','f','ff'];
+  const y = l => Y0 - (Y0 - YT) * l / 5;
+  const pts = [[0,2],[4,2],[9,3],[15,3],[16.5,4],[23,4],[24,5],[27,5],[30,3],[33,0.15],[34,1],[40,1]];
+  let path = `M${x(0)},${y(pts[0][1])}`;
+  for (let i = 1; i < pts.length; i++) {
+    const [ta,la] = pts[i-1], [tb,lb] = pts[i], mx = (x(ta)+x(tb))/2;
+    path += ` C${mx},${y(la)} ${mx},${y(lb)} ${x(tb)},${y(lb)}`;
+  }
+  let g = '';
+  TORMENTA.forEach((m,i) => {
+    if (i % 2 === 0) g += `<rect x="${x(m.t[0])}" y="${YT-24}" width="${x(m.t[1])-x(m.t[0])}" height="${Y0-YT+24}" fill="var(--surface-2)" opacity=".7"/>`;
+    g += `<text class="lbl" x="${(x(m.t[0])+x(m.t[1]))/2}" y="${YT-8}" text-anchor="middle">${m.nombre === 'Estrellita' ? '★' : esc(m.nombre)}</text>`;
+  });
+  levels.forEach((l,i) => {
+    g += `<line x1="${X0}" x2="${X1}" y1="${y(i)}" y2="${y(i)}" stroke="var(--line)" stroke-width="1"/>`;
+    g += `<text x="${X0-8}" y="${y(i)+4}" text-anchor="end" style="font-style:${i ? 'italic' : 'normal'};font-family:${i ? 'Georgia,serif' : 'inherit'};font-size:${i ? 14 : 11}px">${l}</text>`;
+  });
+  [0,10,20,30,40].forEach(t => { g += `<text x="${x(t)}" y="${Y0+22}" text-anchor="middle">${t} s</text>`; });
+  g += `<path d="${path} L${x(40)},${Y0} L${x(0)},${Y0} Z" fill="var(--accent)" opacity=".16"/>`;
+  g += `<path d="${path}" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>`;
+  g += `<circle cx="${x(25.5)}" cy="${y(5)}" r="6" fill="var(--accent)"/>`;
+  svg.innerHTML = g;
+})();
+
+/* ---------- rúbrica ---------- */
+document.getElementById('rubric').innerHTML = RUBRICA.map((r,i) => `
+  <li><label><input type="checkbox" id="r${i+1}"><span class="txt"><b>${i+1}. ${esc(r.nombre)}</b><small>${esc(r.como)}</small></span><span class="pts tab">${r.pts}</span></label></li>`).join('');
+
+/* ---------- casillas guardadas ---------- */
+const KEY = 'estrellita-guia-v1';
+let saved = {};
+try { saved = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { saved = {}; }
+const boxes = [...document.querySelectorAll('input[type=checkbox]')];
+boxes.forEach(b => { if (saved[b.id]) b.checked = true; b.addEventListener('change', () => { saved[b.id] = b.checked; try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) {} updateProgress(); }); });
+function updateProgress(){
+  const done = boxes.filter(b => b.checked).length;
+  document.getElementById('progress-txt').textContent = `${done} de ${boxes.length} listo`;
+  document.getElementById('ringv').setAttribute('stroke-dasharray', `${Math.round(done/boxes.length*100)} 100`);
+}
+updateProgress();
+
+/* ---------- audio ---------- */
+let AC = null;
+function audio(){ if (!AC) AC = new (window.AudioContext || window.webkitAudioContext)(); if (AC.state === 'suspended') AC.resume(); return AC; }
+function pluck(freq, o = {}){
+  const c = audio(), sr = c.sampleRate, dur = o.dur || 1.8, len = Math.floor(sr*dur);
+  const buf = c.createBuffer(1, len, sr), d = buf.getChannelData(0);
+  const N = Math.max(2, Math.round(sr/freq)), ring = new Float32Array(N);
+  for (let i = 0; i < N; i++) ring[i] = Math.random()*2 - 1;
+  if (o.soft) for (let p = 0; p < 6; p++) for (let i = 1; i < N; i++) ring[i] = (ring[i] + ring[i-1]) * .5;
+  const decay = o.decay || .996; let idx = 0;
+  for (let i = 0; i < len; i++){ const a = ring[idx], b = ring[(idx+1)%N]; d[i] = a; ring[idx] = decay*.5*(a+b); idx = (idx+1)%N; }
+  let m = 0; for (let i = 0; i < len; i++) m = Math.max(m, Math.abs(d[i]));
+  const k = (o.gain ?? .6)/(m || 1);
+  for (let i = 0; i < len; i++) d[i] *= k;
+  if (o.mute){ const cut = Math.floor(sr*.12), fade = sr*.035; for (let i = cut; i < len; i++) d[i] *= Math.max(0, 1-(i-cut)/fade); }
+  for (let i = len - Math.floor(sr*.05); i < len; i++) d[i] *= (len-i)/(sr*.05);
+  const s = c.createBufferSource(); s.buffer = buf; s.connect(c.destination); s.start();
+}
+const SND = {
+  grave: () => pluck(110, {decay:.997}), agudo: () => pluck(392),
+  largo: () => pluck(196, {dur:2.6, decay:.9985}), corto: () => pluck(196, {mute:true}),
+  suave: () => pluck(196, {gain:.1}), fuerte: () => pluck(196, {gain:.9}),
+  yema: () => pluck(196, {soft:true}), plumilla: () => pluck(196)
+};
+document.querySelectorAll('[data-snd]').forEach(b => b.addEventListener('click', () => SND[b.dataset.snd]()));
+
+/* ---------- melodía guía ---------- */
+const contour = document.getElementById('contour');
+(function buildContour(){
+  const top = 71;
+  const lines = [MELODIA.slice(0,7), MELODIA.slice(7)];
+  let n = 0;
+  contour.innerHTML = lines.map(line => { let beat = 1; return `<div class="mline">${line.map(([m,dur,syl]) => {
+    const html = `<span class="syl${dur > 1 ? ' long' : ''}" data-i="${n++}" style="grid-column:${beat} / span ${dur};grid-row-start:${top - m + 1}">${esc(syl)}</span>`;
+    beat += dur; return html; }).join('')}</div>`; }).join('');
+})();
+let tempo = 88, withPulse = true, playing = null;
+const playBtn = document.getElementById('play');
+function stopMelody(){
+  if (!playing) return;
+  playing.nodes.forEach(n => { try { n.stop(); } catch (e) {} });
+  playing.timers.forEach(clearTimeout);
+  contour.querySelectorAll('.syl.on').forEach(s => s.classList.remove('on'));
+  playing = null; playBtn.querySelector('span').textContent = 'Escuchar melodía guía';
+}
+function playMelody(){
+  const c = audio(), beat = 60/tempo, t0 = c.currentTime + .15, nodes = [], timers = [];
+  let t = t0;
+  MELODIA.forEach(([m,dur], i) => {
+    const f = 440*Math.pow(2,(m-69)/12), len = dur*beat;
+    const o = c.createOscillator(), g = c.createGain();
+    o.type = 'triangle'; o.frequency.value = f;
+    g.gain.setValueAtTime(.0001, t); g.gain.exponentialRampToValueAtTime(.32, t+.03);
+    g.gain.setValueAtTime(.32, t+len*.7); g.gain.exponentialRampToValueAtTime(.0001, t+len*.96);
+    o.connect(g).connect(c.destination); o.start(t); o.stop(t+len); nodes.push(o);
+    const el = contour.querySelector(`[data-i="${i}"]`);
+    timers.push(setTimeout(() => { contour.querySelectorAll('.syl.on').forEach(s => s.classList.remove('on')); el.classList.add('on'); }, (t - c.currentTime)*1000));
+    if (withPulse) for (let b = 0; b < dur; b++){
+      const tb = t + b*beat, k = c.createOscillator(), kg = c.createGain();
+      k.type = 'sine'; k.frequency.value = 1400;
+      kg.gain.setValueAtTime(.0001, tb); kg.gain.exponentialRampToValueAtTime(.12, tb+.005); kg.gain.exponentialRampToValueAtTime(.0001, tb+.06);
+      k.connect(kg).connect(c.destination); k.start(tb); k.stop(tb+.08); nodes.push(k);
+    }
+    t += len;
+  });
+  timers.push(setTimeout(stopMelody, (t - c.currentTime)*1000 + 200));
+  playing = {nodes, timers}; playBtn.querySelector('span').textContent = 'Detener';
+}
+playBtn.addEventListener('click', () => playing ? stopMelody() : playMelody());
+document.querySelectorAll('[data-tempo]').forEach(b => b.addEventListener('click', () => {
+  tempo = +b.dataset.tempo; document.querySelectorAll('[data-tempo]').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+  if (playing){ stopMelody(); playMelody(); }
+}));
+const pulseBtn = document.getElementById('pulse');
+pulseBtn.addEventListener('click', () => { withPulse = !withPulse; pulseBtn.setAttribute('aria-pressed', String(withPulse)); pulseBtn.textContent = withPulse ? 'Con pulso' : 'Sin pulso'; });
+
+/* ---------- cronómetro y modo ensayo ---------- */
+const R = document.getElementById('rehearse');
+const TOTAL = GUION[GUION.length - 1].t[1];
+const SPEED_MIN = .6, SPEED_MAX = 1.4;
+let ri = 0, opener = null, auto = true, speed = 1, countT = null;
+try {
+  const p = JSON.parse(localStorage.getItem(KEY + '-ensayo') || '{}') || {};
+  if (typeof p.auto === 'boolean') auto = p.auto;
+  if (typeof p.speed === 'number' && p.speed >= SPEED_MIN && p.speed <= SPEED_MAX) speed = p.speed;
+} catch (e) {}
+const saveR = () => { try { localStorage.setItem(KEY + '-ensayo', JSON.stringify({auto, speed})); } catch (e) {} };
+const bStart = i => GUION[i].t[0] / speed;
+const bEnd = i => GUION[i].t[1] / speed;
+const scriptEnd = () => TOTAL / speed;
+const blockAt = t => { const i = GUION.findIndex((g, k) => t < bEnd(k)); return i < 0 ? GUION.length - 1 : i; };
+const fmtSpeed = v => v.toFixed(2).replace('.', ',').replace(/,?0+$/, '') + '×';
+const autoBtn = document.getElementById('r-auto'), speedIn = document.getElementById('r-speed');
+
+const sw = {start:0, acc:0, on:false};
+const swNow = () => (sw.acc + (sw.on ? performance.now() - sw.start : 0)) / 1000;
+function setClock(sec){ sw.acc = Math.max(0, sec) * 1000; if (sw.on) sw.start = performance.now(); }
+
+function renderClock(){
+  let s = swNow();
+  const rehearsing = !R.hidden;
+  let ended = false;
+  if (rehearsing && auto && s >= scriptEnd() - .005){
+    if (sw.on){ sw.acc = scriptEnd() * 1000; sw.on = false; }
+    s = scriptEnd(); ended = true;
+  }
+  document.querySelectorAll('[data-clock-big]').forEach(e => e.textContent = fmt(s));
+  document.querySelectorAll('[data-clock-toggle]').forEach(e => e.textContent = countT ? 'Cancelar' : sw.on ? 'Pausar' : (s > 0 && !ended ? 'Seguir' : 'Iniciar'));
+  const bar = document.querySelector('[data-clock-bar]');
+  bar.querySelector('i').style.width = Math.min(100, s/240*100) + '%';
+  bar.classList.toggle('warn', s >= 210 && s < 240); bar.classList.toggle('bad', s >= 240);
+  const st = document.querySelector('[data-clock-status]');
+  st.textContent = s === 0 ? 'Listo para empezar.' : s < 210 ? 'A tiempo.' : s < 240 ? 'Pasaste el objetivo de 3:30: cierra pronto.' : 'Pasaste los 4:00: acorta algún bloque.';
+  st.style.color = s >= 240 ? 'var(--bad)' : s >= 210 ? 'var(--warn)' : 'var(--ok)';
+  if (!rehearsing) return;
+  const prog = document.getElementById('r-prog'), left = document.getElementById('r-left');
+  if (auto){
+    const i = blockAt(Math.min(s, scriptEnd() - .01));
+    if (i !== ri){ ri = i; renderR(); }
+    const a = bStart(ri), b = bEnd(ri);
+    prog.style.width = Math.max(0, Math.min(1, (s - a) / (b - a))) * 100 + '%';
+    left.textContent = ended ? 'Fin del guion' : !sw.on ? (s > 0 ? 'En pausa' : 'Avanza solo al iniciar')
+      : (ri < GUION.length - 1 ? 'Sigue ' + GUION[ri+1].titulo + ' en ' : 'Termina en ') + Math.max(1, Math.ceil(b - s)) + ' s';
+  } else {
+    prog.style.width = '0%';
+    left.textContent = s > 0 ? 'Según el reloj: bloque ' + (blockAt(s) + 1) : '';
+  }
+}
+function tick(){ renderClock(); if (sw.on) requestAnimationFrame(tick); }
+function beginClock(){ sw.start = performance.now(); sw.on = true; tick(); }
+function cancelCountdown(){ if (!countT) return; clearInterval(countT); countT = null; document.getElementById('r-count').hidden = true; renderClock(); }
+function startCountdown(){
+  const box = document.getElementById('r-count'); let n = 3;
+  const show = () => { box.innerHTML = n + '<small>' + esc(GUION[ri].titulo) + '</small>'; };
+  box.hidden = false; show();
+  countT = setInterval(() => {
+    n--;
+    if (n > 0) show();
+    else { clearInterval(countT); countT = null; box.hidden = true; beginClock(); }
+  }, 1000);
+  renderClock();
+}
+function toggleClock(){
+  if (countT){ cancelCountdown(); return; }
+  if (sw.on){ sw.acc += performance.now() - sw.start; sw.on = false; renderClock(); return; }
+  if (!R.hidden && auto && swNow() >= scriptEnd() - .05){ sw.acc = 0; ri = 0; renderR(); }
+  if (!R.hidden) startCountdown(); else beginClock();
+}
+function resetClock(){ cancelCountdown(); sw.on = false; sw.acc = 0; if (auto){ ri = 0; if (!R.hidden) renderR(); } renderClock(); }
+function giveTone(){
+  const c = audio(), t = c.currentTime + .05, o = c.createOscillator(), g = c.createGain();
+  o.type = 'triangle'; o.frequency.value = 293.66;
+  g.gain.setValueAtTime(.0001, t); g.gain.exponentialRampToValueAtTime(.35, t + .04);
+  g.gain.setValueAtTime(.35, t + 1); g.gain.exponentialRampToValueAtTime(.0001, t + 1.4);
+  o.connect(g).connect(c.destination); o.start(t); o.stop(t + 1.45);
+}
+function lyricsHTML(g){
+  const L = g.letra; if (!L) return '';
+  let body;
+  if (L.tipo === 'altura' || L.tipo === 'duracion'){
+    body = [MELODIA.slice(0,7), MELODIA.slice(7)].slice(0, L.lineas.length).map((line, li) => {
+      let beat = 1;
+      const pills = line.map(([m,dur,syl]) => {
+        const st = 'grid-column:' + beat + ' / span ' + dur + (L.tipo === 'altura' ? ';grid-row-start:' + (71 - m + 1) : '');
+        beat += dur;
+        return '<span class="rs' + (dur > 1 ? ' long' : '') + '" style="' + st + '">' + esc(syl) + '</span>';
+      }).join('');
+      return '<div class="rline"><div class="rgrid">' + pills + '</div><div class="cue">' + esc(L.lineas[li][1]) + '</div></div>';
+    }).join('');
+  } else {
+    body = L.lineas.map(([t, cue], i) => '<div class="rline' + (L.tipo === 'intensidad' ? (i ? ' forte' : ' piano') : '') + '"><p class="ltxt">' + esc(t) + '</p><div class="cue">' + esc(cue) + '</div></div>').join('');
+  }
+  return '<div class="rlyr ' + L.tipo + '"><div class="rlh"><span class="rk">Letra que cantas</span><button class="btn small" type="button" data-tone>♪ Dar el tono</button></div>' + body + '</div>';
+}
+document.querySelectorAll('[data-clock-toggle]').forEach(b => b.addEventListener('click', toggleClock));
+document.querySelectorAll('[data-clock-reset]').forEach(b => b.addEventListener('click', resetClock));
+
+function renderR(){
+  const g = GUION[ri];
+  document.getElementById('r-meta').textContent = `Bloque ${ri+1} de ${GUION.length} · ${fmt(bStart(ri))}–${fmt(bEnd(ri))}`;
+  document.getElementById('r-placa').textContent = g.placa || 'Sin placa';
+  document.getElementById('r-title').textContent = g.titulo;
+  document.getElementById('r-say').textContent = g.storm ? g.dices : '«' + g.dices + '»';
+  document.getElementById('r-do').textContent = g.haces;
+  const ol = document.getElementById('r-storm');
+  ol.hidden = !g.storm;
+  ol.innerHTML = g.storm ? TORMENTA.map(m => `<li><b>${esc(m.nombre)}</b> · ${fmt(m.t[0] / speed).replace(/^0:/, '')}–${fmt(m.t[1] / speed).replace(/^0:/, '')} s · ${esc(m.haces)}</li>`).join('') : '';
+  const lyr = document.getElementById('r-lyr');
+  lyr.hidden = !g.letra; lyr.innerHTML = lyricsHTML(g);
+  document.getElementById('r-body').classList.toggle('has-lyr', !!g.letra);
+  document.getElementById('r-prev').disabled = ri === 0;
+  document.getElementById('r-next').disabled = ri === GUION.length - 1;
+}
+function goTo(i){
+  if (i < 0 || i >= GUION.length) return;
+  ri = i; renderR();
+  if (auto) setClock(i === 0 ? 0 : bStart(i) + .01);
+  renderClock();
+}
+function toggleAuto(){
+  auto = !auto; saveR(); autoBtn.setAttribute('aria-checked', String(auto));
+  if (auto){ const t = swNow(); if (t < bStart(ri) || t >= bEnd(ri)) setClock(ri === 0 ? 0 : bStart(ri) + .01); }
+  renderClock();
+}
+function setSpeed(v){
+  v = Math.round(Math.min(SPEED_MAX, Math.max(SPEED_MIN, v)) * 20) / 20;
+  const scriptTime = swNow() * speed;
+  speed = v; saveR();
+  if (auto) setClock(scriptTime / speed);
+  speedIn.value = String(v);
+  document.getElementById('r-speed-out').textContent = fmtSpeed(v);
+  const tot = scriptEnd(), totalEl = document.getElementById('r-total');
+  totalEl.textContent = 'A esta velocidad el guion dura ' + fmt(tot) + (tot > 240 ? ' (más de 4:00: solo para practicar)' : '');
+  totalEl.classList.toggle('over', tot > 240);
+  if (!R.hidden) renderR();
+  renderClock();
+}
+function openR(e){
+  opener = e && e.currentTarget; R.hidden = false; document.body.style.overflow = 'hidden';
+  if (auto) ri = blockAt(Math.min(swNow(), scriptEnd() - .01));
+  renderR(); renderClock(); document.getElementById('r-close').focus();
+}
+R.addEventListener('click', e => { if (e.target.closest('[data-tone]')) giveTone(); });
+function closeR(){ cancelCountdown(); R.hidden = true; document.body.style.overflow = ''; renderClock(); if (opener) opener.focus(); }
+document.querySelectorAll('[data-open-rehearsal]').forEach(b => b.addEventListener('click', openR));
+document.getElementById('r-close').addEventListener('click', closeR);
+document.getElementById('r-prev').addEventListener('click', () => goTo(ri - 1));
+document.getElementById('r-next').addEventListener('click', () => goTo(ri + 1));
+autoBtn.addEventListener('click', toggleAuto);
+speedIn.addEventListener('input', () => setSpeed(+speedIn.value));
+document.addEventListener('keydown', e => {
+  if (R.hidden) return;
+  const onRange = e.target === speedIn;
+  if (e.key === 'Escape') closeR();
+  else if (!onRange && e.key === 'ArrowRight') goTo(ri + 1);
+  else if (!onRange && e.key === 'ArrowLeft') goTo(ri - 1);
+  else if (e.key === ' ' && !(e.target instanceof HTMLButtonElement)){ e.preventDefault(); toggleClock(); }
+  else if (e.key === 'a' || e.key === 'A') toggleAuto();
+  else if (e.key === '+' || e.key === '='){ e.preventDefault(); setSpeed(speed + .05); }
+  else if (e.key === '-' || e.key === '_'){ e.preventDefault(); setSpeed(speed - .05); }
+  else if (e.key === 'Tab'){
+    const f = [...R.querySelectorAll('button:not([disabled]), input')];
+    const i = f.indexOf(document.activeElement);
+    if (e.shiftKey && i <= 0){ e.preventDefault(); f[f.length-1].focus(); }
+    else if (!e.shiftKey && i === f.length - 1){ e.preventDefault(); f[0].focus(); }
+  }
+});
+autoBtn.setAttribute('aria-checked', String(auto));
+setSpeed(speed);
+
+/* ---------- lluvia de la portada ---------- */
+(function sky(){
+  const cv = document.getElementById('sky'), ctx = cv.getContext('2d');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let W = 0, H = 0, drops = [], stars = [], running = !reduce;
+  function size(){
+    const r = cv.getBoundingClientRect(), dpr = Math.min(2, devicePixelRatio || 1);
+    W = r.width; H = r.height; cv.width = W*dpr; cv.height = H*dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
+    drops = Array.from({length: Math.round(W*H/7000)}, () => ({x: Math.random()*W*1.1, y: Math.random()*H, l: 10+Math.random()*22, v: 2.5+Math.random()*3.5, a: .08+Math.random()*.18}));
+    stars = Array.from({length: Math.round(W/16)}, () => ({x: Math.random()*W, y: Math.random()*H*.6, r: .6+Math.random()*1.3, a: .25+Math.random()*.5}));
+    draw();
+  }
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    for (const s of stars){ ctx.fillStyle = `rgba(241,245,251,${s.a})`; ctx.beginPath(); ctx.arc(s.x,s.y,s.r,0,7); ctx.fill(); }
+    ctx.lineCap = 'round'; ctx.lineWidth = 1.4;
+    for (const d of drops){ ctx.strokeStyle = `rgba(160,190,235,${d.a})`; ctx.beginPath(); ctx.moveTo(d.x,d.y); ctx.lineTo(d.x-d.l*.22,d.y+d.l); ctx.stroke(); }
+  }
+  function step(){
+    if (!running) return;
+    for (const d of drops){ d.y += d.v; d.x -= d.v*.22; if (d.y > H){ d.y = -d.l; d.x = Math.random()*W*1.1; } }
+    draw(); requestAnimationFrame(step);
+  }
+  size(); addEventListener('resize', size);
+  if (!reduce){
+    new IntersectionObserver(([e]) => { const was = running; running = e.isIntersecting; if (running && !was) requestAnimationFrame(step); }).observe(cv);
+    requestAnimationFrame(step);
+  }
+})();
+</script>
+
+</body>
+</html>
